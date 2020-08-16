@@ -43,7 +43,8 @@ Branch 'master' set up to track remote branch 'master' from 'origin'.
 ## stash 命令
 ### 使用场景
 - 当准备提交代码时发现有一个文件的改动是多余的，想直接还原的又担心之后想要查看这些改动的代码，想保存它又不想增加一个多余的提交，此时就可以使用`stash`缓存起来。
-- 当开发一个需求开发一半的时候，来了个紧急bug，正常情况可以切换分支去修改和调试代码
+- 当开发一个需求开发一半的时候，来了个紧急bug，正常情况可以把完成一半的代码`commit`提交到本地仓库，然后创建切换到一个新的分支去修改bug。但这样的话往往log上会有大量不必要的记录。`stash`就能解决这样的需求，使用`git stash`把当前完成一半的代码缓存起来推入`Git`的栈中，然后把紧急的代码改完后提交，最后再`git stash pop`把完成一半的代码拉回到本地代码中
+
 ### 操作列表
 ```bash
 PS D:\project\git\test-project> git stash help
