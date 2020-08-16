@@ -8,7 +8,7 @@ module.exports = {
 		extraWatchFiles: [], // 指定额外的需要被监听的文件 √
 		cache: false, // 缓存 默认是true
     themeConfig: {
-			sidebarDepth: 2, // 配置左侧侧边栏显示的深度
+			sidebarDepth: 1, // 配置左侧侧边栏显示的深度
 			// 每个页面的导航栏生成生成一个 GitHub 链接, 前缀是 https://github.com/ 加上 repo
 			repo: 'wenbintian',
 			editLinkText: '帮助我们改善此页面！',
